@@ -9,14 +9,13 @@ const Producto = ({ producto }) => {
 
   return (
     <div className="p-3 bg-white shadow-md rounded-xl">
-      <div className="grid place-items-center">
-
+      <div className="grid place-items-center transition duration-300 ease-in-out hover:translate-y-[-5%] hover:shadow-lg">
         <Image
           width={400}
           height={500}
           src={`/assets/img/${imagen}.jpg`}
           alt={`Imagen del producto: ${nombre}`}
-          className="rounded-md"
+          className="rounded-md "
         />
       </div>
       <div className="p-5">

@@ -18,7 +18,7 @@ const Sidebar = () => {
           />
         </a>
       </Link>
-      <nav className="mt-10 p-3 text-sm grid grid-cols-2 md:grid-cols-1 md:p-0 ">
+      <nav className="mt-10 p-3 text-sm grid grid-cols-2 md:grid-cols-1 md:p-0">
         {categorias.map((categoria) => (
           <Categoria key={categoria.id} categoria={categoria} />
         ))}

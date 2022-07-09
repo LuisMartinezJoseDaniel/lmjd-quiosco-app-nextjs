@@ -6,8 +6,8 @@ const ResumenProducto = ( { producto } ) => {
   const { handleEditarResumen, handleEliminarProducto } = useQuiosco();
 
   return (
-    <div className="shadow p-5 mb-3 flex gap-3 items-center bg-white">
-      <div className="md:w-1/6">
+    <div className="shadow p-5 mb-3 flex flex-col gap-3 md:flex-row md:items-center bg-white">
+      <div className="md:w-1/6 grid place-items-center">
         <Image
           width={300}
           height={400}
@@ -31,10 +31,10 @@ const ResumenProducto = ( { producto } ) => {
           </span>
         </p>
       </div>
-      <div>
+      <div className='flex gap-3 md:flex-col'>
         <button
           type="button"
-          className="bg-sky-700 flex gap-2 px-5 py-2 text-white font-bold uppercase rounded-md shadow-sm w-full mb-3"
+          className="bg-sky-700 flex gap-2 px-5 py-2 text-white font-bold uppercase rounded-md shadow-sm w-full"
           onClick={() => {
             handleEditarResumen(producto.id);
           }}
